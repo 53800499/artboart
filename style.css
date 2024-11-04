@@ -1,0 +1,35 @@
+
+*{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn-inscription{
+    background-color: rgb(215, 96, 60);
+}
+.rose{
+    color: rgb(215, 96, 60);
+}
+
+.title{
+    font-weight: 500;
+    font-size: 4em;
+    color: #fff;
+    max-width: 800px;
+    justify-content: center;
+}
+
+.inscription{
+    font-size: 1.1em;
+}
+.section{
+    max-height: 100vh;
+}
+.pourquoi{
+ font-weight: 200;
+}
+.pourquoi h1{
+    font-weight: 600;
+    font-size: 2em;
+}
