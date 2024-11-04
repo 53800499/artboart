@@ -1,0 +1,9 @@
+{
+    "builds": [
+      { "src": "artboart/**/*", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/artboart/$1" }
+    ]
+  }
+  
