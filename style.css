@@ -12,11 +12,11 @@
 }
 
 .btn-inscription{
-    background-color: rgb(215, 96, 60);
+    background-color: rgb(245, 113, 51);
     font-size: 1em;
 }
 .rose{
-    color: rgb(215, 96, 60);
+    color: rgb(245, 113, 51);
 }
 
 .title{
@@ -68,6 +68,7 @@
     align-self: flex-start;
   }
 
+  
 @media (max-width: 1496px) {
     .section{
         max-height: 110vh;
