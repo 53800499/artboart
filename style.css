@@ -32,10 +32,14 @@
 }
 .pourquoi{
  font-weight: 200;
+ padding-left: 150px;
+ padding-right: 150px;
 }
-.pourquoi h1{
+
+.pourquoi h2{
     font-weight: 600;
     font-size: 2em;
+    max-width: 800px;
 }
 .facile{
     margin-top: 200px;
@@ -79,6 +83,14 @@
     .cards{
         max-width: 550px;
     }
+    .pourquoi{
+        padding-left: 80px;
+        padding-right: 80px;
+       }
+       
+       .pourquoi h2{
+           max-width: unset;
+       }
 }
 @media (max-width: 990px) {
     .section{
@@ -120,6 +132,16 @@
     
 }
 
+@media (max-width: 800px) {
+    .pourquoi{
+        padding-left: 20px;
+        padding-right: 20px;
+       }
+       
+       .pourquoi h2{
+           max-width: unset;
+       }
+}
 @media (max-width: 769px) {
     .faktyline{
         margin-left: inherit;
