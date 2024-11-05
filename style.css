@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+.logo{
+    max-width: 300px;
+}
+
 .btn-inscription{
     background-color: rgb(215, 96, 60);
     font-size: 1em;
@@ -24,7 +28,7 @@
     font-size: 1.1em;
 }
 .section{
-    max-height: 70vh;
+    max-height: 90vh;
 }
 .pourquoi{
  font-weight: 200;
@@ -32,6 +36,19 @@
 .pourquoi h1{
     font-weight: 600;
     font-size: 2em;
+}
+.facile{
+    margin-top: 200px;
+}
+
+.faktyline{
+    margin-left: 90px;
+}
+
+.nbre{
+    width: 55px;
+    height: 30px;
+    border-radius: 50%;
 }
 
   
@@ -47,4 +64,64 @@
     align-self: flex-start;
   }
 
-  
+@media (max-width: 1496px) {
+    .section{
+        max-height: 110vh;
+    }
+}
+@media (max-width: 1277px) {
+    .section{
+        max-height: 90vh;
+    }
+    .facile{
+        margin-top: 200px;
+    }
+    .cards{
+        max-width: 550px;
+    }
+}
+@media (max-width: 990px) {
+    .section{
+        max-height: 60vh;
+    }
+    .facile{
+        margin-top: 0;
+    }
+    
+}
+
+@media (max-width: 957px) {
+    .section{
+        max-height: 130vh;
+    }
+    .facile{
+        margin-top: 100px;
+    }
+    
+    .facture{
+        margin: none;
+    }
+    
+}
+@media (max-width: 991px) {
+    .section{
+        max-height: 130vh;
+    }
+    .facile{
+        margin-top: 100px;
+    }
+    .documents{
+        margin-bottom: 20px;
+    }
+    .logo{
+        max-width: 190px;
+        height: 30px;
+    }
+    
+}
+
+@media (max-width: 769px) {
+    .faktyline{
+        margin-left: inherit;
+    }
+}
