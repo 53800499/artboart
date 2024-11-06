@@ -72,7 +72,18 @@
     align-self: flex-start;
   }
 
-  
+.titles{
+    font-size: 3em;
+}
+
+/* Pour que l'image SVG occupe tout l’espace du conteneur */
+.full-img {
+    width: 300%;
+    height: 100%;
+    object-fit: contain; /* Utilise contain pour éviter la déformation */
+}
+
+
 @media (max-width: 1496px) {
     .section{
         max-height: 150vh;
@@ -134,7 +145,16 @@
     .facture{
         margin: none;
     }
+
+    .titles{
+        font-size: 2.3em;
+    }
     
+}
+@media (min-width: 991px) {
+    .finance{
+
+    }
 }
 @media (max-width: 991px) {
     .section{
@@ -194,7 +214,7 @@
 }
 @media (max-width: 443px) {
     .dashboard{
-        max-width: 300px;
+        max-width: 310px;
     }
     .facile{
         margin-top: 90px;
