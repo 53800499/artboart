@@ -172,7 +172,7 @@
 
 @media (max-width: 1496px) {
     .section{
-        max-height: 150vh;
+        max-height: 120vh;
     }
     .dashboard{
         max-width: 1100px;
@@ -181,7 +181,7 @@
 }
 @media (max-width: 1277px) {
     .section{
-        max-height: 180vh;
+        max-height: 120vh;
     }
     .facile{
         margin-top: 200px;
@@ -210,7 +210,9 @@
     .facile{
         margin-top: 200px;
     }
-    
+    .section{
+        max-height: 100vh;
+    }
 }
 
 
@@ -227,32 +229,8 @@
         display: none;
         width: 100%;
     }
-}
-
-
-@media (max-width: 957px) {
     .section{
-        max-height: 130vh;
-    }
-    .facile{
-        margin-top: 100px;
-    }
-    
-    .facture{
-        margin: none;
-    }
-
-    .titles{
-        font-size: 2.3em;
-    }
-    
-}
-@media (max-width: 991px) {
-    .section{
-        max-height: 130vh;
-    }
-    .facile{
-        margin-top: 100px;
+        max-height: 100vh;
     }
     .documents{
         margin-bottom: 20px;
@@ -266,6 +244,20 @@
         margin-left: 40px;
         margin-right: 40px;
        }
+    
+}
+
+
+
+@media (max-width: 957px) {
+    
+    .facture{
+        margin: none;
+    }
+
+    .titles{
+        font-size: 2.3em;
+    }
     
 }
 
@@ -308,12 +300,23 @@
     .facile{
         margin-top: 90px;
     }
+    .section{
+        max-height: 90vh;
+    }
 }
 @media (max-width: 443px) {
     .dashboard{
         max-width: 310px;
     }
     .facile{
-        margin-top: 90px;
+        margin-top: 85px;
+    }
+}
+@media (max-width: 387px) {
+    .section{
+        max-height: 100vh;
+    }
+    .facile{
+        margin-top: 70px;
     }
 }
