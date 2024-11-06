@@ -36,11 +36,6 @@
  padding-right: 150px;
 }
 
-.pourquoi h2{
-    font-weight: 600;
-    font-size: 2em;
-    max-width: 800px;
-}
 .facile{
     margin-top: 400px;
 }
@@ -138,9 +133,6 @@
     .dashboard{
         max-width: 1000px;
     }
-    .cards{
-        max-width: 550px;
-    }
     .pourquoi{
         padding-left: 80px;
         padding-right: 80px;
@@ -153,6 +145,11 @@
 @media (max-width: 1192px) {
     .pourquoi_coll{
         margin-right: 50px;
+    }
+}
+@media (max-width: 1018px) {
+    .cards{
+        width: 250px;
     }
 }
 @media (max-width: 1000px) {
