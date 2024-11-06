@@ -147,9 +147,10 @@
         margin-right: 50px;
     }
 }
-@media (max-width: 1018px) {
-    .cards{
-        width: 250px;
+@media (min-width: 600px) and (max-width: 1200px) {
+    .cards {
+        width: 80%; /* Largeur de 80% de l'écran pour cet intervalle */
+        max-width: 270px; /* Limite maximale de 800px pour l'élément */
     }
 }
 @media (max-width: 1000px) {
