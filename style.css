@@ -100,16 +100,21 @@
     z-index: 1;  /*Assure que l'image passe par-dessus le contenu environnant */
 }
 
-/* Ajustement responsive pour les petits écrans */
-@media (max-width: 991px) {
-    .full-img {
-        min-width: auto; /* Retire la contrainte de largeur minimale sur les petits écrans */
-        min-height: auto; /* Retire la contrainte de hauteur minimale sur les petits écrans */
-        width: 100%; /* Adapte l'image à la largeur du conteneur */
-        transform: none; /* Annule le décalage pour les petits écrans */
-    }
-}
 
+.circle {
+    width: 45px;                /* Largeur fixe du cercle */
+    height: 45px;               /* Hauteur fixe du cercle */
+    background-color: #f57133;  /* Couleur de fond */
+    color: #fff;                /* Couleur du texte */
+    font-size: 1em;          /* Taille de police pour le contenu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;         /* Pour un cercle parfait */
+    text-align: center;
+    line-height: 1;             /* Empêche l'espacement vertical */
+    flex-shrink: 0;             /* Empêche le cercle de rétrécir */
+}
 
 
 
@@ -159,6 +164,17 @@
     }
     
 }
+
+/* Ajustement responsive pour les petits écrans */
+@media (max-width: 991px) {
+    .full-img {
+        min-width: auto; /* Retire la contrainte de largeur minimale sur les petits écrans */
+        min-height: auto; /* Retire la contrainte de hauteur minimale sur les petits écrans */
+        width: 100%; /* Adapte l'image à la largeur du conteneur */
+        transform: none; /* Annule le décalage pour les petits écrans */
+    }
+}
+
 
 @media (max-width: 957px) {
     .section{
