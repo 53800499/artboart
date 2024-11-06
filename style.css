@@ -110,9 +110,65 @@
     line-height: 1;             /* Empêche l'espacement vertical */
     flex-shrink: 0;             /* Empêche le cercle de rétrécir */
 }
+.roundeds{
+    border-radius: 20px;
+}
 
 
 
+
+
+
+.image-container {
+    position: relative;
+    width: 100%; /* Adjust width as needed */
+    max-width: 350px; /* To control the max size */
+    height: 400px;      /* Hauteur du conteneur, ajustable */
+    margin-left: 20px;
+  }
+
+
+/* Style de l'image principale */
+.main-image {
+    position: absolute;
+    right: 0;           /* Positionnée à droite sans espace */
+    bottom: 0;          /* Positionnée au bas sans espace */
+    width: 100%;        /* Ajustez pour couvrir horizontalement le conteneur */
+    height: auto;       /* Conserve le ratio de l'image */
+    transform: translateX(0%) translateY(15%); /* Centre en X et ajuste en Y */
+}
+
+/* Style de l'image en overlay */
+.overlay-image {
+    position: absolute;
+    left: 0;          /* Positionnement horizontal au centre de l'image principale */
+    transform: translateX(-30%) translateY(1%); /* Centre en X et ajuste en Y */
+    width: 40%;         /* Taille de l'image en overlay, ajustez selon besoin */
+    bottom: 0;          /* Aligné au bas de `.main-image` */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour l’effet de profondeur */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+  
+
+.optimisez{
+    width: 1100px;
+    justify-self: center;
+}
+
+@media (min-width: 200px) and (max-width: 1200px) {
+    .optimisez{
+        justify-self: center;
+        width: 80%; /* Largeur de 80% de l'écran pour cet intervalle */
+    }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+    .cards {
+        width: 80%; /* Largeur de 80% de l'écran pour cet intervalle */
+        max-width: 270px; /* Limite maximale de 800px pour l'élément */
+    }
+}
+  
 
 @media (max-width: 1496px) {
     .section{
@@ -147,12 +203,6 @@
         margin-right: 50px;
     }
 }
-@media (min-width: 600px) and (max-width: 1200px) {
-    .cards {
-        width: 80%; /* Largeur de 80% de l'écran pour cet intervalle */
-        max-width: 270px; /* Limite maximale de 800px pour l'élément */
-    }
-}
 @media (max-width: 1000px) {
     .dashboard{
         max-width: 800px;
@@ -163,6 +213,8 @@
     
 }
 
+
+
 /* Ajustement responsive pour les petits écrans */
 @media (max-width: 991px) {
     .full-img {
@@ -170,6 +222,10 @@
         min-height: auto; /* Retire la contrainte de hauteur minimale sur les petits écrans */
         width: 100%; /* Adapte l'image à la largeur du conteneur */
         transform: none; /* Annule le décalage pour les petits écrans */
+    }
+    .image-container {
+        display: none;
+        width: 100%;
     }
 }
 
@@ -191,11 +247,6 @@
     }
     
 }
-@media (min-width: 991px) {
-    .finance{
-
-    }
-}
 @media (max-width: 991px) {
     .section{
         max-height: 130vh;
@@ -210,6 +261,11 @@
         max-width: 190px;
         height: 30px;
     }
+    .optimise{
+        width: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
+       }
     
 }
 
@@ -227,6 +283,7 @@
        .pourquoi h2{
            max-width: unset;
        }
+       
 }
 @media (max-width: 769px) {
     .faktyline{
