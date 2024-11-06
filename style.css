@@ -91,13 +91,13 @@
     position: relative;
     width: auto; /* Permet à l'image de garder une largeur dynamique */
     height: auto;
-    min-width: 800px; /* Largeur minimale */
+    min-width: 500px; /* Largeur minimale */
     min-height: 1000px; /* Hauteur minimale */
     object-fit: cover; /* Remplit l'espace sans déformer l'image */
     display: block;
     margin: 0 auto;
-    /*transform: translateX(-50px);  Décalage horizontal pour créer l'effet de débordement */
-    /*z-index: 1;  Assure que l'image passe par-dessus le contenu environnant */
+    transform: translateX(-50px); /* Décalage horizontal pour créer l'effet de débordement */
+    z-index: 1;  /*Assure que l'image passe par-dessus le contenu environnant */
 }
 
 /* Ajustement responsive pour les petits écrans */
