@@ -314,7 +314,7 @@
 }
 @media (max-width: 387px) {
     .section{
-        max-height: 100vh;
+        max-height: 95vh;
     }
     .facile{
         margin-top: 70px;
