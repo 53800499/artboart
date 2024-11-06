@@ -155,7 +155,8 @@
 }
 
 .document2{
-    margin-right: 40px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 }
 
 @media (min-width: 200px) and (max-width: 1200px) {
@@ -305,6 +306,11 @@
     }
     .section{
         max-height: 85vh;
+    }
+}
+@media (max-width: 767px) {
+    .document2{
+        margin-right: unset;
     }
 }
 @media (max-width: 678px) {
