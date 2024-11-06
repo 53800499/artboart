@@ -154,6 +154,10 @@
     justify-self: center;
 }
 
+.document2{
+    margin-right: 40px;
+}
+
 @media (min-width: 200px) and (max-width: 1200px) {
     .optimisez{
         justify-self: center;
