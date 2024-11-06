@@ -84,6 +84,36 @@
 }
 
 
+
+
+/* Permet à l'image de déborder des côtés */
+.full-img {
+    position: relative;
+    width: auto; /* Permet à l'image de garder une largeur dynamique */
+    height: auto;
+    min-width: 800px; /* Largeur minimale */
+    min-height: 1000px; /* Hauteur minimale */
+    object-fit: cover; /* Remplit l'espace sans déformer l'image */
+    display: block;
+    margin: 0 auto;
+    /*transform: translateX(-50px);  Décalage horizontal pour créer l'effet de débordement */
+    /*z-index: 1;  Assure que l'image passe par-dessus le contenu environnant */
+}
+
+/* Ajustement responsive pour les petits écrans */
+@media (max-width: 991px) {
+    .full-img {
+        min-width: auto; /* Retire la contrainte de largeur minimale sur les petits écrans */
+        min-height: auto; /* Retire la contrainte de hauteur minimale sur les petits écrans */
+        width: 100%; /* Adapte l'image à la largeur du conteneur */
+        transform: none; /* Annule le décalage pour les petits écrans */
+    }
+}
+
+
+
+
+
 @media (max-width: 1496px) {
     .section{
         max-height: 150vh;
@@ -109,10 +139,6 @@
     .pourquoi{
         padding-left: 80px;
         padding-right: 80px;
-    }
-       
-    .pourquoi h2{
-           max-width: unset;
     }
     .pourquoi_col{
         min-width: 200px;
