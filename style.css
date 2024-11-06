@@ -333,7 +333,9 @@
     }
 }
 @media (max-width: 387px) {
-    
+    .section{
+        max-height: 78vh;
+    }
     .faciles{
         margin-top: 70px;
     }
