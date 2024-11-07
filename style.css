@@ -44,8 +44,8 @@
 }
 
 .dark {
-    position: relative; /* Nécessaire pour le pseudo-élément */
-    height: 300px; /* Ajustez cette hauteur en fonction de vos besoins */
+    position: relative; 
+    height: 30%; 
     overflow: hidden;
 }
 
@@ -59,9 +59,6 @@
     background-color: #000000; /* Couleur de fond pour la bande */
     z-index: -1; /* Place la bande derrière le contenu */
 }
-
-
-
 
 .nbre{
     width: 55px;
