@@ -1,7 +1,7 @@
 
 *{
     font-family: "Poppins", serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -91,11 +91,6 @@
     width: 300%;
     height: 100%;
     object-fit: contain; /* Utilise contain pour éviter la déformation */
-}
-
-
-.sections{
-    height: 130vh;
 }
 
 /* Permet à l'image de déborder des côtés */
@@ -188,27 +183,12 @@
   
 
 @media (max-width: 1496px) {
-    .sections{
-        max-height: 210vh;
-    }
-    .section{
-        max-height: 120vh;
-    }
     .dashboard{
         max-width: 1100px;
     }
 
 }
 @media (max-width: 1277px) {
-    .sections{
-        max-height: 165vh;
-    }
-    .section{
-        max-height: 90vh;
-    }
-    .faciles{
-        margin-top: 200px;
-    }
     .dashboard{
         max-width: 1000px;
     }
@@ -229,15 +209,6 @@
 @media (max-width: 1000px) {
     .dashboard{
         max-width: 800px;
-    }
-    .faciles{
-        margin-top: 200px;
-    }
-    .section{
-        max-height: 80vh;
-    }
-    .sections{
-        max-height: 145vh;
     }
 }
 
@@ -288,12 +259,6 @@
     .dashboard{
         max-width: 600px;
     }
-    .sections{
-        max-height: 120vh;
-    }
-    .section{
-        max-height: 75vh;
-    }
 }
 @media (max-width: 800px) {
     .pourquoi{
@@ -318,9 +283,6 @@
     .progresss{
         margin: auto;
     }
-    .section{
-        max-height: 85vh;
-    }
 }
 @media (max-width: 767px) {
     .document2{
@@ -331,32 +293,9 @@
     .dashboard{
         max-width: 400px;
     }
-    .faciles{
-        margin-top: 90px;
-    }
-    .sections{
-        max-height: 100vh;
-    }
-    .section{
-        max-height: 75vh;
-    }
 }
 @media (max-width: 443px) {
-    .section{
-        max-height: 72vh;
-    }
     .dashboard{
         max-width: 310px;
-    }
-    .faciles{
-        margin-top: 85px;
-    }
-}
-@media (max-width: 387px) {
-    .section{
-        max-height: 78vh;
-    }
-    .faciles{
-        margin-top: 70px;
     }
 }
