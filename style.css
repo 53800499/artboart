@@ -51,7 +51,6 @@
     max-width: 1300px;
 }
 
-  
   .text-primary {
     color: rgb(215, 96, 60);
   }
@@ -77,7 +76,7 @@
 
 
 .sections{
-    height: 170vh;
+    height: 130vh;
 }
 
 /* Permet à l'image de déborder des côtés */
@@ -113,9 +112,22 @@
     border-radius: 20px;
 }
 
-
-
-
+.sectionss {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sectionss::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30.33%; /* Applique l'effet au tiers inférieur */
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur blanche semi-transparente */
+    z-index: 10; /* Place le pseudo-élément au-dessus du contenu */
+  }
+  
 
 
 .image-container {
