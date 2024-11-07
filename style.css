@@ -27,9 +27,11 @@
 
 .inscription{
     font-size: 1.1em;
+    background-color: #000000;
 }
-.section{
-    max-height: 90vh;
+
+.navbar{
+    background-color: #000000;
 }
 .pourquoi{
  font-weight: 200;
@@ -40,6 +42,26 @@
 .faktyline{
     margin-left: 90px;
 }
+
+.dark {
+    position: relative; /* Nécessaire pour le pseudo-élément */
+    height: 300px; /* Ajustez cette hauteur en fonction de vos besoins */
+    overflow: hidden;
+}
+
+.dark::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Ajustez pour limiter la hauteur du fond */
+    background-color: #000000; /* Couleur de fond pour la bande */
+    z-index: -1; /* Place la bande derrière le contenu */
+}
+
+
+
 
 .nbre{
     width: 55px;
@@ -111,23 +133,6 @@
 .roundeds{
     border-radius: 20px;
 }
-
-.sectionss {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .sectionss::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30.33%; /* Applique l'effet au tiers inférieur */
-    background-color: rgba(255, 255, 255, 0.5); /* Couleur blanche semi-transparente */
-    z-index: 10; /* Place le pseudo-élément au-dessus du contenu */
-  }
-  
 
 
 .image-container {
